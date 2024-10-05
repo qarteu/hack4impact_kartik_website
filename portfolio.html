@@ -4,38 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <style>
+        @font-face {
+            font-family: 'AfacadFlux';
+            src: url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('truetype'),
+                 url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #000000; /* Black background */
+            color: #87CEEB; /* Sky blue color */
+            font-family: 'AfacadFlux', 'Times New Roman', serif; /* Apply the new font */
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #1a1a1a; /* Dark gray for navbar */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1.logo a,
+        .navbar ul.nav-list li a {
+            color: #87CEEB; /* Sky blue color */
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul.nav-list {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul.nav-list li {
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .project img {
+            border: 5px solid #87CEEB; /* Sky blue border */
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+
+        .project-details {
+            margin-left: 20px; /* Space between image and details */
+            text-align: left;
+        }
+
+        .project-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #1a1a1a; /* Dark gray for footer */
+            color: #87CEEB; /* Sky blue color */
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Portfolio<nav class="navbar"></nav>
-        <h1 class="logo"><a href="index.html">personal website</a></h1>
+    <nav class="navbar">
+        <h1 class="logo"><a href="index.html">Personal Website</a></h1>
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav></h1>
+    </nav>
     
     <main>
+        <h1>My Portfolio</h1>
         <div class="project">
-            <!-- Image representing the project -->
             <a href="index.html">
-                <img src="images/flower.jpeg" alt="picture of sun flower" width="300" height="200">
+                <img src="images/flower.jpeg" alt="Picture of sunflower" width="300" height="200">
             </a>
-            
-            <!-- Project details -->
             <div class="project-details">
-                <!-- Project Name -->
                 <p class="project-name">Personal Website</p>
-                
-                <!-- Project Description -->
                 <p class="project-description">
                     This is a personal website I created to showcase my projects, portfolio, and blog. 
                     It includes multiple sections such as a resume, portfolio, and contact form.
                 </p>
-
-                <!-- Link to the project -->
                 <a href="index.html">Learn More</a>
             </div>
         </div>
