@@ -1,27 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+    <style>
+        @font-face {
+            font-family: 'AfacadFlux';
+            src: url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('truetype'),
+                 url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #000000; /* Black background */
+            color: #87CEEB; /* Sky blue text */
+            font-family: 'AfacadFlux', 'Roboto', sans-serif; /* Custom font */
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #1a1a1a; /* Dark gray for navbar */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between; /* Space between logo and nav links */
+            align-items: center; /* Center vertically */
+        }
+
+        .navbar h1.logo a,
+        .navbar ul.nav-list li a {
+            color: #87CEEB; /* Sky blue color */
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul.nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0; /* Reset default margin */
+            padding: 0; /* Reset default padding */
+        }
+
+        .navbar ul.nav-list li {
+            margin: 0 15px; /* Space between nav items */
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .blog-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #87CEEB; /* Sky blue color */
+        }
+
+        .post {
+            margin: 20px 0;
+            border: 2px solid #87CEEB; /* Sky blue border for posts */
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #1a1a1a; /* Dark gray background for posts */
+        }
+
+        .post img {
+            width: 300px; /* Set image width */
+            height: 200px; /* Set image height */
+            border: 2px solid #87CEEB; /* Sky blue border for images */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        footer {
+            background-color: #1a1a1a; /* Dark gray for footer */
+            color: #87CEEB; /* Sky blue color */
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
     <nav class="navbar">
-      <h1 class="logo">
-        <a href="index.html">Personal Website</a>
-      </h1>
-      <ul class="nav-list">
-        <li><a href="index.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <h1 class="logo">
+            <a href="index.html">Personal Website</a>
+        </h1>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
     <main>
-      <h1 class="blog-title">Blog</h1>
+        <h1 class="blog-title">Blog</h1>
+
+        <div class="post">
+            <a href="index.html">
+                <img src="images/char.jpeg" alt="picture of pokemon">
+            </a>
+            <h3 class="post-title">Welcome to My Blog</h3>
+            <p class="post-description">
+                This is a space where I share my thoughts, projects, and updates. Stay tuned for more posts!
+            </p>
+            <a href="index.html">Read More</a>
+        </div>
+
     </main>
-    <footer class="footer">
-      © 2024 kartiks's Personal Website | All Rights Reserved
-    </footer>
-  </body>
+</body>
 </html>
