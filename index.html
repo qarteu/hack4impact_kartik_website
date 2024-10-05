@@ -1,32 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-  </head>
-  <body>
+    <style>
+        @font-face {
+            font-family: 'AfacadFlux';
+            src: url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('truetype'),
+                 url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #000000; /* Black background */
+            color: #87CEEB; /* Sky blue color */
+            font-family: 'AfacadFlux', 'Times New Roman', serif; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #1a1a1a; /* Dark gray for navbar */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between; /* Space between logo and nav links */
+            align-items: center; /* Center vertically */
+        }
+
+        .navbar h1.logo {
+            margin-right: auto; /* Align logo to the left */
+        }
+
+        .navbar h1.logo a,
+        .navbar ul.nav-list li a {
+            color: #87CEEB; /* Sky blue color */
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul.nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0; /* Reset default margin */
+            padding: 0; /* Reset default padding */
+        }
+
+        .navbar ul.nav-list li {
+            margin: 0 15px; /* Space between nav items */
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #87CEEB; /* Sky blue color */
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 300px; /* Set a specific width for the image */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 10px; /* Space between images */
+            border: 5px solid #87CEEB; /* Sky blue border */
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+
+        footer {
+            background-color: #1a1a1a; /* Dark gray for footer */
+            color: #87CEEB; /* Sky blue color */
+            text-align: center;
+            padding: 5px; /* Reduced padding */
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.8em; /* Smaller font size for copyright */
+            margin-top: 40px; /* Add space above the footer */
+        }
+    </style>
+</head>
+<body>
     <nav class="navbar">
-      <h1 class="logo">
-        <a href="index.html">personal website</a>
-      </h1>
-      <nav class="navbar">
-        <h1 class="logo"><a href="index.html">personal website</a></h1>
+        <h1 class="logo">
+            <a href="index.html">Personal Website</a>
+        </h1>
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+    </nav>
     <main>
-      <h1 class="page-title">hello world!</h1>
-      <div class="about">
-        <div class="about-image"> 
-            <img src="<flower.jpeg" alt="<An image of a flower>">
+        <h1 class="page-title">Welcome to My Personal Website</h1>
+        <div class="image-container">
+            <img src="images/drip.PNG.webp" alt="picture of sunflower">
         </div>
-        <div class="about-text">
-          <p>
-            <strong>Hack4Impact</strong> is a 501c3
-            <em>non-profit organization</em> that does non-profit software
-            development in support of local non-profits. We build websites,
-            volunteer management systems, and web applications that an
+        <p>Hi my name is Kartik, I am a freshman majoring in Computer Science! Explore my page to learn more</p>
+    </main>
+</body>
+</html>
