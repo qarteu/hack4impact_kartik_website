@@ -10,6 +10,13 @@ html {
   height: 100%;
 }
 
+@font-face {
+  font-family: 'YourFontName'; /* Change to the name of your font */
+  src: url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('truetype'), /* Adjust the path and file name */
+       url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('woff'); /* Optional */
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: var(--cg-grey);
   position: relative;
