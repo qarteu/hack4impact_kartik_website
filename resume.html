@@ -15,7 +15,7 @@
 
         body {
             background-color: #000000; /* Black background */
-            color: #87CEEB; /* Sky blue color */
+            color: #FFFFFF; /* White color for resume content */
             font-family: 'AfacadFlux', 'Times New Roman', serif; /* Apply the new font */
             margin: 0;
             padding: 0;
@@ -49,6 +49,8 @@
         main {
             padding: 40px;
             text-align: center;
+            max-width: 800px; /* Restrict the width of the content */
+            margin: 0 auto; /* Center the content */
         }
 
         .page-title {
@@ -60,6 +62,8 @@
             font-size: 2em;
             margin-top: 40px;
             margin-bottom: 20px;
+            text-align: left; /* Align section titles to the left */
+            border-bottom: 2px dotted #87CEEB; /* Dotted line for section transitions */
         }
 
         .entry {
@@ -77,10 +81,8 @@
             margin-bottom: 5px;
         }
 
-        .course-list,
-        .skill-list {
-            list-style-type: none; /* Remove bullets */
-            padding: 0; /* Remove default padding */
+        .bullet-points {
+            margin-left: 20px; /* Indent bullet points */
         }
 
         footer {
@@ -107,18 +109,16 @@
     </nav>
 
     <main>
-        <!-- Resume Page Title -->
         <h1 class="page-title">My Resume</h1>
-
-        <!-- Download Resume Button -->
-        <a href="resume.pdf" download style="color: #87CEEB; text-decoration: underline;">Download Resume</a>
+        <a href="web resume.pdf" download style="color: #87CEEB; text-decoration: underline;">Download Resume</a>
 
         <!-- Education Section -->
         <section>
             <h1 class="section-title">Education</h1>
             <div class="entry">
                 <h3 class="entry-title">California Polytechnic University San Luis Obispo</h3>
-                <p class="entry-info">B.S. in Computer Science, Expected Graduation: June 2027</p>
+                <p class="entry-info">B.S. in Computer Science, Concentration: AI/ML</p>
+                <p class="entry-info">Expected Graduation: June 2027</p>
             </div>
         </section>
 
@@ -126,20 +126,39 @@
         <section>
             <h1 class="section-title">Experience</h1>
             <div class="entry">
-                <h3 class="entry-title">Software Engineering Intern, Stanford University School of Medicine</h3>
-                <p class="entry-info">June 2024 - August 2024</p>
-                <p class="entry-description">
-                    Worked on extracting RVSP measurements from ECHO reports using Pandas and NumPy, 
-                    leading to improved physician reporting efficiency by 40%.
-                </p>
+                <h3 class="entry-title">Software Engineer Intern</h3>
+                <p class="entry-info">Stanford University School Of Medicine</p>
+                <p class="entry-info">Palo Alto, CA</p>
+                <p class="entry-info">September 2023 - Present</p>
+                <ul class="bullet-points">
+                    <li>Developed a Python data extraction pipeline using Pandas and NumPy, improving patient outcomes by 15-30%</li>
+                    <li>Collaborated with ResAI to present AI-driven solutions for patient data interpretation to angel investors, increasing reporting efficiency by 40%</li>
+                    <li>Trained and optimized AI models to detect inconsistencies between numerical changes and documented changes, achieving a 95% accuracy rate in data validation</li>
+                    <li>Authored/presented paper “Reference Change Value in RVSP, A Tree Based Analysis Of Physician Reporting”</li>
+                </ul>
             </div>
 
             <div class="entry">
-                <h3 class="entry-title">Outlier AI - AI Developer</h3>
-                <p class="entry-info">October 2023 - Present</p>
-                <p class="entry-description">
-                    Developing AI solutions for automating data processing and analysis in healthcare.
-                </p>
+                <h3 class="entry-title">AI Engineer, Contract</h3>
+                <p class="entry-info">Outlier</p>
+                <p class="entry-info">Hybrid, San Francisco, CA</p>
+                <p class="entry-info">July 2023 - Present</p>
+                <ul class="bullet-points">
+                    <li>Achieved 30% performance improvement through transfer learning and fine-tuning BERT-based architectures</li>
+                    <li>Evaluated AI responses using Shapley values for clearer decision-making insights, achieving an 85% satisfaction rate in user feedback</li>
+                    <li>Developed an evaluation framework, reducing error rates by 25% and improving precision by 15%</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <h3 class="entry-title">Data Engineer, Researcher</h3>
+                <p class="entry-info">Stanford University</p>
+                <p class="entry-info">Palo Alto, CA</p>
+                <p class="entry-info">May 2023 - September 2023</p>
+                <ul class="bullet-points">
+                    <li>Implemented an API for reading clinician notes, enabling automated data extraction and integration into patient records</li>
+                    <li>Leveraged Hugging Face's text classification models, enhancing the readability and accuracy of medical documentation by 35%</li>
+                </ul>
             </div>
         </section>
 
@@ -147,49 +166,35 @@
         <section>
             <h1 class="section-title">Projects</h1>
             <div class="entry">
-                <h3 class="entry-title">Personal Website</h3>
-                <p class="entry-info">A website showcasing my projects, blog, and portfolio.</p>
-                <p class="entry-description">
-                    Designed and developed a personal portfolio website using HTML, CSS, and JavaScript.
-                </p>
+                <h3 class="entry-title">Save Our Society: 501(c)3 non-profit</h3>
+                <p class="entry-info">Remote</p>
+                <p class="entry-info">President, Volunteer</p>
+                <p class="entry-info">August 2021 - Present</p>
+                <ul class="bullet-points">
+                    <li>Launched Project HelloWorld, introducing students to adaptive learning through artificial intelligence teaching Java, Python, and Scratch</li>
+                    <li>Organized hackathons and opportunities benefiting 950+ students nationwide with 150+ mentors</li>
+                </ul>
             </div>
 
             <div class="entry">
-                <h3 class="entry-title">Occupancy Tracking Device</h3>
-                <p class="entry-info">Developed during the COVID-19 pandemic to track building occupancy using facial recognition.</p>
-                <p class="entry-description">
-                    Designed a device to monitor and control the number of people in local stores, ensuring compliance with health regulations.
-                </p>
+                <h3 class="entry-title">RoomSense Device</h3>
+                <p class="entry-info">August 2021 - September 2021</p>
+                <ul class="bullet-points">
+                    <li>Developed a facial recognition-based occupancy tracking device, increasing COVID-19 safety compliance</li>
+                    <li>System provided real-time monitoring of capacity limits, reducing manual checks by 50%</li>
+                </ul>
             </div>
-        </section>
-
-        <!-- Coursework Section -->
-        <section>
-            <h1 class="section-title">Relevant Coursework</h1>
-            <ul class="course-list">
-                <li>Data Structures and Algorithms</li>
-                <li>Machine Learning</li>
-                <li>Artificial Intelligence</li>
-                <li>Database Management Systems</li>
-                <li>Operating Systems</li>
-            </ul>
         </section>
 
         <!-- Skills Section -->
         <section>
             <h1 class="section-title">Skills</h1>
-            <ul class="skill-list">
-                <li>Python, JavaScript, HTML, CSS</li>
-                <li>Machine Learning with Scikit-learn</li>
-                <li>Data Analysis with Pandas and NumPy</li>
-                <li>Version Control with Git</li>
-                <li>Cloud Computing (Google Cloud, AWS)</li>
+            <ul class="bullet-points">
+                <li>Developer Languages: Java, JavaScript, HTML/CSS, Python, Swift (iOS)</li>
+                <li>Developer Tools: TensorFlow, AWS, Jupyter Notebook, Git, PyCharm, IntelliJ, Eclipse, VS Code</li>
+                <li>Languages: Chinese, English, and Marathi</li>
             </ul>
         </section>
-    </main>
+    </main
 
-    <footer>
-        © 2024 Kartik's Personal Website | All Rights Reserved
-    </footer>
-</body>
-</html>
+    
