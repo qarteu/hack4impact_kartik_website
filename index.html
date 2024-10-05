@@ -77,6 +77,22 @@
             border-radius: 5px; /* Optional: rounded corners */
         }
 
+        .dotted-line {
+            border-top: 1px dotted #87CEEB; /* Dotted line style */
+            margin: 20px 0; /* Margin around the line */
+            width: 300px; /* Match the image width */
+            margin-left: auto; /* Center the line */
+            margin-right: auto; /* Center the line */
+        }
+
+        .intro-text {
+            width: 300px; /* Match the image width */
+            margin-left: auto; /* Center the text */
+            margin-right: auto; /* Center the text */
+            padding: 0 10px; /* Add some padding for better readability */
+            text-align: center; /* Center the text */
+        }
+
         footer {
             background-color: #1a1a1a; /* Dark gray for footer */
             color: #87CEEB; /* Sky blue color */
@@ -104,11 +120,20 @@
         </ul>
     </nav>
     <main>
-        <h1 class="page-title">Welcome to My Personal Website</h1>
+        <h1 class="page-title">Welcome To Kartik's Website</h1>
         <div class="image-container">
             <img src="images/drip.PNG.webp" alt="picture of sunflower">
         </div>
-        <p>Hi my name is Kartik, I am a freshman majoring in Computer Science! Explore my page to learn more</p>
+        <div class="dotted-line"></div> <!-- Dotted line below the image -->
+        <p class="intro-text">Hi, my name is Kartik, I am a freshman majoring in Computer Science!
+             I am interested in all technologies but specifically in applications 
+             of CS in healthcare and markets.
+             
+             Besides academics, I like playing games, hiking, lifting, and swimming. 
+             Explore my page to learn more.</p>
     </main>
+    <footer>
+        © 2024 Kartik's Personal Website | All Rights Reserved
+    </footer>
 </body>
 </html>
