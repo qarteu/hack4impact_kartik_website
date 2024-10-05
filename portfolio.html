@@ -53,28 +53,31 @@
 
         .project {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
             margin-bottom: 40px;
-        }
-
-        .project img {
-            border: 5px solid #87CEEB; /* Sky blue border */
-            border-radius: 5px; /* Optional: rounded corners */
-        }
-
-        .project-details {
-            margin-left: 20px; /* Space between image and details */
             text-align: left;
         }
 
+        .project img {
+            width: 300px;
+            height: 200px;
+            border: 5px solid #87CEEB; /* Sky blue border */
+            border-radius: 5px; /* Rounded corners */
+            margin-right: 20px; /* Space between image and details */
+        }
+
+        .project-details {
+            max-width: 60%;
+        }
+
         .project-name {
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin-bottom: 10px;
         }
 
         .project-description {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
 
         footer {
@@ -102,19 +105,65 @@
     
     <main>
         <h1>My Portfolio</h1>
+
         <div class="project">
-            <a href="index.html">
-                <img src="images/flower.jpeg" alt="Picture of sunflower" width="300" height="200">
-            </a>
+            <img src="images/forestfire.png" alt="Picture of simulation">
             <div class="project-details">
-                <p class="project-name">Personal Website</p>
+                <p class="project-name">Monte Carlo Forest Fire Simulation</p>
                 <p class="project-description">
-                    This is a personal website I created to showcase my projects, portfolio, and blog. 
-                    It includes multiple sections such as a resume, portfolio, and contact form.
+                    Developed and implemented a Monte Carlo simulation to model forest fire spread. Identified key environmental factors 
+                    that, when controlled, resulted in a 35% reduction in fire spread rate. Wrote a research paper detailing these findings, 
+                    providing valuable strategies for firefighters to effectively manage and contain wildfires.
                 </p>
-                <a href="index.html">Learn More</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="images/ball.jpg" alt="Image of ball tracking">
+            <div class="project-details">
+                <p class="project-name">Ball-Tracking with K-Means</p>
+                <p class="project-description">
+                    This ball-tracking project leverages a K-means clustering algorithm to track a ball's movement by detecting its color 
+                    and analyzing its trajectory. The system monitors the ball's position over time, calculating its flight path, speed, 
+                    and predicting its future trajectory.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="images/imageprocessing.jpg" alt="Image processing project">
+            <div class="project-details">
+                <p class="project-name">Sobel Edge Detection</p>
+                <p class="project-description">
+                    This project applied the Sobel filter for edge detection to enhance facial structures, improving recognition accuracy. 
+                    By breaking images into grid matrices, key facial features were highlighted, contributing to a more accurate dataset 
+                    for facial recognition algorithms.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="images/hand.jpeg" alt="Image of mouse tracker">
+            <div class="project-details">
+                <p class="project-name">Mouse Tracker and Hand Detection for Fruit Ninja</p>
+                <p class="project-description">
+                    Developed a mouse tracking system that later evolved into real-time hand detection. 
+                    By applying filters like Gaussian blur and edge detection, the software isolates the hand 
+                    from the background in real-time video frames. Once the hand is segmented, it uses contour detection 
+                    to identify the hand's shape and track its movement. This allows the system to monitor gestures, 
+                    which can be applied to interactive applications like playing games or controlling interfaces 
+                    through hand motions. The focus of the project was to create an accurate, 
+                    responsive system for real-time gesture recognition. 
+                    through hand gestures. The system tracked hand movements and 
+                    translated them into game actions
+                </p>
+                <a href="https://github.com/qarteu">git</a>
             </div>
         </div>
     </main>
+
+    <footer>
+        © 2024 Kartik's Personal Website | All Rights Reserved
+    </footer>
 </body>
 </html>
