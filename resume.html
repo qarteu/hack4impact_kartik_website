@@ -1,103 +1,195 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="styles.css"> 
-  </head>
-  <body>
-    <h1>My Resume<nav class="navbar"></nav>
-        <h1 class="logo"><a href="index.html">personal website</a></h1>
+    <style>
+        @font-face {
+            font-family: 'AfacadFlux';
+            src: url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('truetype'),
+                 url('Afacad_Flux/static/AfacadFlux-Regular.ttf') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #000000; /* Black background */
+            color: #87CEEB; /* Sky blue color */
+            font-family: 'AfacadFlux', 'Times New Roman', serif; /* Apply the new font */
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #1a1a1a; /* Dark gray for navbar */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1.logo a,
+        .navbar ul.nav-list li a {
+            color: #87CEEB; /* Sky blue color */
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul.nav-list {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul.nav-list li {
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .entry {
+            margin: 20px 0; /* Space between entries */
+            text-align: left; /* Align text to the left */
+        }
+
+        .entry-title {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .entry-info {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .course-list,
+        .skill-list {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove default padding */
+        }
+
+        footer {
+            background-color: #1a1a1a; /* Dark gray for footer */
+            color: #87CEEB; /* Sky blue color */
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><a href="index.html">Personal Website</a></h1>
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav></h1>
+    </nav>
+
     <main>
-      <!-- Resume Page Title -->
-      <h1 class="page-title">My Resume</h1>
+        <!-- Resume Page Title -->
+        <h1 class="page-title">My Resume</h1>
 
-      <!-- Download Resume Button -->
-      <a href="resume.pdf" download>Download Resume</a>
+        <!-- Download Resume Button -->
+        <a href="resume.pdf" download style="color: #87CEEB; text-decoration: underline;">Download Resume</a>
 
-      <!-- Education Section -->
-      <section>
-        <h1 class="section-title">Education</h1>
-        <div class="entry">
-          <h3 class="entry-title">California Polytechnic University San Luis Obispo</h3>
-          <p class="entry-info">B.S. in Computer Science, Expected Graduation: June 2027</p>
-        </div>
-      </section>
+        <!-- Education Section -->
+        <section>
+            <h1 class="section-title">Education</h1>
+            <div class="entry">
+                <h3 class="entry-title">California Polytechnic University San Luis Obispo</h3>
+                <p class="entry-info">B.S. in Computer Science, Expected Graduation: June 2027</p>
+            </div>
+        </section>
 
-      <!-- Experience Section -->
-      <section>
-        <h1 class="section-title">Experience</h1>
-        <div class="entry">
-          <h3 class="entry-title">Software Engineering Intern, Stanford University School of Medicine</h3>
-          <p class="entry-info">June 2024 - August 2024</p>
-          <p class="entry-description">
-            Worked on extracting RVSP measurements from ECHO reports using Pandas and NumPy, 
-            leading to improved physician reporting efficiency by 40%.
-          </p>
-        </div>
+        <!-- Experience Section -->
+        <section>
+            <h1 class="section-title">Experience</h1>
+            <div class="entry">
+                <h3 class="entry-title">Software Engineering Intern, Stanford University School of Medicine</h3>
+                <p class="entry-info">June 2024 - August 2024</p>
+                <p class="entry-description">
+                    Worked on extracting RVSP measurements from ECHO reports using Pandas and NumPy, 
+                    leading to improved physician reporting efficiency by 40%.
+                </p>
+            </div>
 
-        <div class="entry">
-          <h3 class="entry-title">Outlier AI - AI Developer</h3>
-          <p class="entry-info">October 2023 - Present</p>
-          <p class="entry-description">
-            Developing AI solutions for automating data processing and analysis in healthcare.
-          </p>
-        </div>
-      </section>
+            <div class="entry">
+                <h3 class="entry-title">Outlier AI - AI Developer</h3>
+                <p class="entry-info">October 2023 - Present</p>
+                <p class="entry-description">
+                    Developing AI solutions for automating data processing and analysis in healthcare.
+                </p>
+            </div>
+        </section>
 
-      <!-- Projects Section -->
-      <section>
-        <h1 class="section-title">Projects</h1>
-        <div class="entry">
-          <h3 class="entry-title">Personal Website</h3>
-          <p class="entry-info">A website showcasing my projects, blog, and portfolio.</p>
-          <p class="entry-description">
-            Designed and developed a personal portfolio website using HTML, CSS, and JavaScript.
-          </p>
-        </div>
+        <!-- Projects Section -->
+        <section>
+            <h1 class="section-title">Projects</h1>
+            <div class="entry">
+                <h3 class="entry-title">Personal Website</h3>
+                <p class="entry-info">A website showcasing my projects, blog, and portfolio.</p>
+                <p class="entry-description">
+                    Designed and developed a personal portfolio website using HTML, CSS, and JavaScript.
+                </p>
+            </div>
 
-        <div class="entry">
-          <h3 class="entry-title">Occupancy Tracking Device</h3>
-          <p class="entry-info">Developed during the COVID-19 pandemic to track building occupancy using facial recognition.</p>
-          <p class="entry-description">
-            Designed a device to monitor and control the number of people in local stores, ensuring compliance with health regulations.
-          </p>
-        </div>
-      </section>
+            <div class="entry">
+                <h3 class="entry-title">Occupancy Tracking Device</h3>
+                <p class="entry-info">Developed during the COVID-19 pandemic to track building occupancy using facial recognition.</p>
+                <p class="entry-description">
+                    Designed a device to monitor and control the number of people in local stores, ensuring compliance with health regulations.
+                </p>
+            </div>
+        </section>
 
-      <!-- Coursework Section -->
-      <section>
-        <h1 class="section-title">Relevant Coursework</h1>
-        <ul class="course-list">
-          <li>Data Structures and Algorithms</li>
-          <li>Machine Learning</li>
-          <li>Artificial Intelligence</li>
-          <li>Database Management Systems</li>
-          <li>Operating Systems</li>
-        </ul>
-      </section>
+        <!-- Coursework Section -->
+        <section>
+            <h1 class="section-title">Relevant Coursework</h1>
+            <ul class="course-list">
+                <li>Data Structures and Algorithms</li>
+                <li>Machine Learning</li>
+                <li>Artificial Intelligence</li>
+                <li>Database Management Systems</li>
+                <li>Operating Systems</li>
+            </ul>
+        </section>
 
-      <!-- Skills Section -->
-      <section>
-        <h1 class="section-title">Skills</h1>
-        <ul class="skill-list">
-          <li>Python, JavaScript, HTML, CSS</li>
-          <li>Machine Learning with Scikit-learn</li>
-          <li>Data Analysis with Pandas and NumPy</li>
-          <li>Version Control with Git</li>
-          <li>Cloud Computing (Google Cloud, AWS)</li>
-        </ul>
-      </section>
+        <!-- Skills Section -->
+        <section>
+            <h1 class="section-title">Skills</h1>
+            <ul class="skill-list">
+                <li>Python, JavaScript, HTML, CSS</li>
+                <li>Machine Learning with Scikit-learn</li>
+                <li>Data Analysis with Pandas and NumPy</li>
+                <li>Version Control with Git</li>
+                <li>Cloud Computing (Google Cloud, AWS)</li>
+            </ul>
+        </section>
     </main>
-  </body>
+
+    <footer>
+        © 2024 Kartik's Personal Website | All Rights Reserved
+    </footer>
+</body>
 </html>
