@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="styles.css" />
     <style>
         @font-face {
             font-family: 'AfacadFlux';
@@ -15,27 +14,24 @@
         }
 
         body {
-            background-color: #2a2a2a; /* Dark gray background */
-            color: #c0c0c0; /* Light gray text */
-            font-family: 'AfacadFlux', 'Roboto', sans-serif; /* Updated font */
+            background-color: #000000; /* Black background */
+            color: #87CEEB; /* Sky blue color */
+            font-family: 'AfacadFlux', 'Times New Roman', serif; 
             margin: 0;
             padding: 0;
         }
 
         .navbar {
-            background-color: #000; /* Black for navbar */
+            background-color: #1a1a1a; /* Dark gray for navbar */
             padding: 15px;
-            display: flex; /* Flexbox for alignment */
-            justify-content: space-between; /* Space between logo and nav links */
-            align-items: center; /* Center vertically */
-            position: sticky; /* Make navbar fixed */
-            top: 0; /* Stick to the top */
-            z-index: 1000; /* Ensure it's on top */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .navbar h1.logo a,
         .navbar ul.nav-list li a {
-            color: #00bfff; /* Bright sky blue for links */
+            color: #87CEEB; /* Sky blue color */
             text-decoration: none;
             padding: 10px;
             transition: color 0.3s;
@@ -43,9 +39,9 @@
 
         .navbar ul.nav-list {
             list-style: none; /* No bullets */
-            display: flex; /* Flexbox for horizontal layout */
-            margin: 0; /* Reset margin */
-            padding: 0; /* Reset padding */
+            display: flex; 
+            margin: 0; 
+            padding: 0; 
         }
 
         .navbar ul.nav-list li {
@@ -53,13 +49,12 @@
         }
 
         main {
-            background-color: #1a1a1a; /* Dark blue background */
+            border: 2px solid #00bfff; /* Blue border around content */
             padding: 40px; /* Padding for content */
-            text-align: center; /* Center text */
-            border-radius: 10px; /* Rounded corners for the main area */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            text-align: center; 
+            background-color: transparent; /* Remove background color */
             display: flex; /* Flexbox for centering */
-            flex-direction: column; /* Column direction */
+            flex-direction: column; 
             justify-content: center; /* Center content vertically */
             align-items: center; /* Center content horizontally */
             margin: 20px auto; /* Centering with margin */
@@ -75,11 +70,11 @@
         input[type="text"],
         input[type="email"],
         textarea {
-            width: 80%; /* Width of input fields */
-            padding: 15px; /* Padding inside input fields */
-            margin: 10px 0; /* Margin above and below */
+            width: 90%; /* Width of input fields, adjusted for tighter fit */
+            padding: 15px; 
+            margin: 10px 0; 
             border: 1px solid #c0c0c0; /* Light gray border */
-            background-color: #3d3d3d; /* Darker gray for input fields */
+            background-color: transparent; /* Remove dark background for inputs */
             color: #c0c0c0; /* Light gray text */
             font-size: 1em; /* Font size */
             border-radius: 5px; /* Rounded corners */
@@ -94,23 +89,24 @@
         }
 
         input[type="submit"] {
-            background-color: #00bfff; /* Bright sky blue button */
-            color: white; /* White text */
-            border: none; /* No border */
+            background-color: transparent; /* Remove background color for button */
+            color: #00bfff; /* Set button text color to blue */
+            border: 2px solid #00bfff; /* Blue border for button */
             padding: 15px 30px; /* Padding for button */
             font-size: 1.2em; /* Font size */
             cursor: pointer; /* Pointer cursor */
             border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s; /* Transition for hover */
+            transition: background-color 0.3s, color 0.3s; /* Transition for hover */
         }
 
         input[type="submit"]:hover {
-            background-color: #009acd; /* Darker blue on hover */
+            background-color: #00bfff; /* Blue background on hover */
+            color: white; /* Change text color to white on hover */
         }
 
         .footer {
-            background-color: #000; /* Black for footer */
-            color: #c0c0c0; /* Light gray text */
+            background-color: #1a1a1a; /* Dark gray for footer */
+            color: #87CEEB; /* Sky blue color */
             text-align: center; /* Center text */
             padding: 15px; /* Padding for footer */
             position: relative; /* Position relative for layout */
@@ -122,11 +118,9 @@
 </head>
 <body>
     <nav class="navbar">
-        <h1 class="logo">
-            <a href="index.html">Personal Website</a>
-        </h1>
+        <h1 class="logo"><a href="index.html">Personal Website</a></h1>
         <ul class="nav-list">
-            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="resume.html">Resume</a></li>
@@ -136,14 +130,12 @@
     <main>
         <h1 class="contact-title">Contact</h1>
         <form id="contact-form">
-            <input type="text" id="name" placeholder="Name" autocomplete="off"/>
-            <input type="email" id="email" placeholder="Email" autocomplete="off"/>
-            <textarea placeholder="Message" autocomplete="off"></textarea>
+            <input type="text" id="name" placeholder="Name" autocomplete="off" required/>
+            <input type="email" id="email" placeholder="Email" autocomplete="off" required/>
+            <textarea placeholder="Message" autocomplete="off" required></textarea>
             <input class="button" type="submit" value="Send Message" />
         </form>
     </main>
-    <footer class="footer">
-        © 2024 Kartik's Personal Website | All Rights Reserved
-    </footer>
+  
 </body>
 </html>
